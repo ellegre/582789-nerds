@@ -2,16 +2,68 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-  
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
+  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.shop-navigation,
+.product-list,
+.order-list,
+.figures-list,
+.partners-list,
+.footer-socisl-list,
+.filter-group,
+.sorting-criteria,
+.sorting-order,
+.catalog-list,
+.pagination-list {
+  list-style: none;
+}
+
+.site-navigation a,
+.shop-navigation a,
+.pagination-list a,
+.footer-socisl-list a,
+.product-item a,
+.adress a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.shop-navigation a:hover,
+.shop-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.shop-navigation a:active {
+  color: #a6a6a6;
+}
+
+.product-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features p:nth-child(1) {
+  color: blue;
 }
 
 .container {
@@ -19,20 +71,6 @@ a {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-
-.main-header {
-  background-color: #eeeeee;
-  
-  /* Временно для демонстрации */
-  height: 50px;
 }
 
 .slider {
@@ -168,7 +206,6 @@ a {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -288,4 +325,20 @@ a {
 
 .max-price {
   text-align: right;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
