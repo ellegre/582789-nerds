@@ -82,6 +82,14 @@ a {
   text-transform: uppercase;
 }
 
+.principles {
+  margin-bottom: 40px;
+}
+
+.development-order {
+  margin-bottom: 23px;
+}
+
 .percent {
   font-size: 45px;
   line-height: 10,06px;
@@ -345,27 +353,18 @@ a {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.product-item .link {
-  display: block;
+.button.link {
   width: 160px;
   padding: 17px 0;
   margin-bottom: 75px;
-  font-size: 16px;
-  line-height: 18px;
   color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  background-color: #fb565a;
-  border-radius: 3px;
-  border: none;
 }
 
-.product-item .link:nth-child(2) {
+.button.link:nth-child(2) {
   background-color: #00ca74;
 }
 
-.link:nth-child(3) {
+.button.link:nth-child(3) {
   background-color: #efc84a;
 }
 
@@ -383,6 +382,35 @@ a {
 .order-list {
   margin: 0;
   padding: 0;
+  margin-left: 36px;
+}
+
+.order-list li {
+  margin-bottom: 24px;
+}
+
+.figures-about-us {
+  margin-left: 120px;
+}
+
+.figures-about-us img {
+  padding-top: 41px;
+  margin-bottom: 31px;
+
+}
+
+.accuracy {
+  margin: 0;
+  margin-left: 17px;
+}
+
+.figures-list {
+  padding: 0;
+  margin: 0;
+}
+
+.figure-item {
+  display: inline-block;
 }
 
 .filter-item {
