@@ -402,15 +402,55 @@ a {
 .accuracy {
   margin: 0;
   margin-left: 17px;
+  margin-bottom: 50px;
 }
 
 .figures-list {
   padding: 0;
   margin: 0;
+  margin-left: 10px;
+  background-color: green;
+  margin-bottom: 10px;
+  
+}
+
+.figures-list p {
+  margin: 0;
 }
 
 .figure-item {
   display: inline-block;
+  width: 32%;
+  text-align: top;
+}
+
+.map {
+  position: relative;
+}
+
+.adress {
+  position: absolute;
+  top: 40px;
+  left: 140px;
+  width: 320px;
+  
+  background-color: #ffffff;
+}
+
+.adress h4 {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.adress p {
+  padding-left: 50px;
+}
+
+.adress a {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 220px;
+  color: #ffffff;
 }
 
 .filter-item {
@@ -419,7 +459,7 @@ a {
   
   border: none;
   
-  width: 260px;
+  
   margin: 50px auto; 
 }
 
