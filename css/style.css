@@ -421,6 +421,7 @@ sup {
 .button-green:active {
   background-color: #00aa62;
   color: #4dc491;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-yellow {
@@ -435,6 +436,7 @@ sup {
 .button-yellow:active {
   background-color: #e5a722;
   color: #edc265;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-red:hover,
@@ -445,6 +447,7 @@ sup {
 .button-red:active {
   background-color: #e74246;
   color: #e37376;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .main-header-logo:hover,
@@ -847,6 +850,7 @@ sup {
   width: 50px;
   box-sizing: border-box;
   background-color: #eeeeee;
+  border-radius: 5%;
 }
 
 .pagination-item a:hover,
@@ -864,6 +868,7 @@ sup {
 .pagination-item.next a {
   padding: 16px 80px;
 
+}
 
 .site-navigation {
   display: flex;
@@ -873,6 +878,7 @@ sup {
   margin-top: 75px;
   margin-left: 159px;
 }
+
 .sorting-criteria,
 .sorting-order {
   padding: 0;
@@ -1086,9 +1092,4 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-item-current {
   border-bottom: 2px solid #fb565a;
-
-}
-
-.pagination-item-current {
-  
 }
