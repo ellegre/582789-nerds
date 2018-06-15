@@ -703,6 +703,7 @@ sup {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+
 }
 
 .range-controls {
@@ -749,11 +750,11 @@ sup {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 159px;
 }
 
 .price-controls {
@@ -789,7 +790,16 @@ sup {
 
 .catalog-list-container {
   margin-left: 20px;
-  margin-bottom: 37px;  
+  margin-bottom: 46px;  
+}
+
+.filter-group li {
+  margin-bottom: 17px;
+}
+
+.filter-group .adaptive {
+  margin-bottom: 16px;
+  margin-top: -3px;
 }
 
 .catalog {
@@ -816,14 +826,16 @@ sup {
 .catalog-item {
   width: 360px;
   min-height: 616px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   margin-left: 19px;
   margin-right: 19px;
 }
 
 .pagination-container {
   margin-left: 20px;
+  margin-bottom: -17px;
 }
+
 
 .pagination-list {
   display: flex;
@@ -922,7 +934,13 @@ sup {
   border: none;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 58px;
+}
+
+.filter-group {
+  padding: 0;
+  padding-left: 37px;
+
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -1092,4 +1110,10 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-item-current {
   border-bottom: 2px solid #fb565a;
+}
+
+.pagination-item-current a {
+  border: 3px solid #dbdbdb;
+  background-color: #ffffff;
+  padding: 14px 19px;
 }
