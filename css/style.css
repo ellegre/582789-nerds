@@ -838,6 +838,14 @@ input[type="checkbox"]:active ~ label::before {
   opacity: 0.1;
 }
 
+.filter-group label {
+  color: #283136;
+}
+
+.filter-group label:hover {
+  color: #000000;
+}
+
 .catalog {
   width: 780px;
   min-height: 2000px;
@@ -857,6 +865,10 @@ input[type="checkbox"]:active ~ label::before {
 
 .catalog-item img {
   vertical-align: top;
+}
+
+.top-slider {
+  opacity: 0.12;
 }
 
 .catalog-item {
@@ -1030,7 +1042,6 @@ input[type="radio"].visually-hidden {
   top: 31px;
   left: 50%;
   width: 960px;
-  
   transform: translateX(-50%);
 }
 
