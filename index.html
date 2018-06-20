@@ -136,8 +136,8 @@
 						<h4>Nёrds Design Studio</h4>
 						<p>191186, Санкт-Петербург, <br>
 						ул. Б. Конюшенная, д. 19/8</p>
-						<p class="telefone">тел.+7(812)2757575</p>
-						<a class="button" href="#">Напишите нам</a>
+						<p class="telefone">тел. + 7(812) 275-75-75</p>
+						<a class="button login-link" href="#">Напишите нам</a>
 					</div>
 				</div>
 			</section>
@@ -163,7 +163,7 @@
 		<section class="modal modal-login">
 		    <h2>Напишите нам</h2>
 		    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-				<p class="modal-description">
+				<p class="modal-description error">
 				    <label for="user-login">Ваше имя:</label><br>
 				    <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия">
 				</p>
@@ -179,5 +179,30 @@
 		    </form>
 		    <button class="modal-close" type="button">Закрыть</button>
 		</section>
+		<script>
+			var link = document.querySelector(".login-link");
+			var popup = document.querySelector(".modal-login");
+			var close = document.querySelector(".modal-close");
+			var login = popup.querySelector("[name=login]");
+			var form = popup.querySelector("form");
+			var password = popup.querySelector("[name=password]");
+
+			link.addEventListener("click", function
+				(evt) {evt.preventDefault();
+			popup.classList.add("modal-show");
+			login.focus();
+			})
+
+			close.addEventListener("click", function
+				(evt) {evt.preventDefault();
+			popup.classList.remove("modal-show");
+			})
+
+			form.addEventListener("submit", function(evt) {
+				if(!login.value || !password.value)
+				{evt.preventDefault();
+			}
+			})
+		</script>
 	</body>
 </html>
