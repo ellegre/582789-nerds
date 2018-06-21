@@ -1094,10 +1094,10 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes bounce {
-  0% {transform: translateY(-2000px);}
-  70% {transform: translateY(30px);}
-  90% {transform: translateY(-10px);} 
-  100% {transform: translateY(0);}
+  0% {transform: translateY(-2000px)  translateX(-50%);}
+  70% {transform: translateY(30px)  translateX(-50%);}
+  90% {transform: translateY(-10px)  translateX(-50%);} 
+  100% {transform: translateY(0)  translateX(-50%);}
 }
 
 .modal-show {
@@ -1277,7 +1277,7 @@ input[type="radio"].visually-hidden {
   fill: #010101;
 }
 
-.sorting-criteria-item-current {
+.sorting-criteria-item.sorting-criteria-item-current {
   color: #000000;
 }
 
