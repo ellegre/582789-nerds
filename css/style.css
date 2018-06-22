@@ -543,14 +543,9 @@ sup {
   text-align: center;
 }
 
-.map::before {
-  position: absolute;
-  content: "";
-  width: 180px;
-  height: 200px;
-  top: 90px;
-  left: 56.4%;
-  background-image: url("../img/map_marker.png");
+.map iframe { 
+  width: 100%; 
+  background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -979,6 +974,7 @@ input[type="checkbox"]:active ~ label::before {
 }
 
 .sorting-criteria a {
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -1277,8 +1273,8 @@ input[type="radio"].visually-hidden {
   fill: #010101;
 }
 
-.sorting-criteria-item.sorting-criteria-item-current {
-  color: #000000;
+.sorting-criteria .sorting-criteria-item-current {
+  opacity: 1;
 }
 
 .error input {
