@@ -160,7 +160,7 @@ sup {
 }
 
 .site-navigation li {
-  margin-left: 43px;
+  margin-left: 42px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -624,6 +624,7 @@ sup {
   -webkit-box-flex: 25%;
       -ms-flex: 25% 0 0px;
           flex: 25% 0 0;
+          max-width: 25%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0px 20px; 
@@ -994,8 +995,8 @@ input[type="checkbox"]:active ~ label::before {
   margin: 0;
   padding: 0;
   padding-bottom: 13px;
-  margin-top: 75px;
-  margin-left: 159px;
+  margin-top: 73px;
+  margin-left: 157px;
 }
 
 .sorting-criteria,
