@@ -77,6 +77,7 @@ img {
 .tagline {
   width: 769px;
   font-size: 45px;
+  font-weight: 500;
   line-height: 45px;
   margin-bottom: 34px;
 }
@@ -113,7 +114,7 @@ img {
   text-transform: uppercase;
 }
 
-sup {
+.index-up {
   display: inline-block ;
   top: -0.3em;
   font-size: 31px;
@@ -196,7 +197,7 @@ sup {
 .shop-navigation {
   margin: 0;
   padding: 0;
-  margin-top: 75px;
+  margin-top: 74px;
   margin-left: 226px;
 }
 
@@ -554,6 +555,7 @@ sup {
 .map {
   position: relative;
   text-align: center;
+  border: none
 }
 
 .map iframe { 
@@ -838,14 +840,14 @@ sup {
   opacity: 0.4;
 }
 
-input[type="radio"]:checked ~ label::before {
+.filter-group input[type="radio"]:checked ~ label::before {
   background-image: url("../img/radio_on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-input[type="radio"]:hover ~ label::before,
-input[type="radio"]:focus ~ label::before {
+.filter-group input[type="radio"]:hover ~ label::before,
+.filter-group input[type="radio"]:focus ~ label::before {
   opacity: 1;
 }
 
@@ -866,18 +868,18 @@ input[type="radio"]:focus ~ label::before {
   opacity: 0.4;
 }
 
-input[type="checkbox"]:checked ~ label::before {
+.filter-group input[type="checkbox"]:checked ~ label::before {
   background-image: url("../img/checkbox_on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-input[type="checkbox"]:hover ~ label::before,
-input[type="checkbox"]:focus ~ label::before {
+.filter-group input[type="checkbox"]:hover ~ label::before,
+.filter-group input[type="checkbox"]:focus ~ label::before {
   opacity: 1;
 }
 
-input[type="checkbox"]:active ~ label::before {
+.filter-group input[type="checkbox"]:active ~ label::before {
   opacity: 0.1;
 }
 
@@ -995,7 +997,7 @@ input[type="checkbox"]:active ~ label::before {
   margin: 0;
   padding: 0;
   padding-bottom: 13px;
-  margin-top: 73px;
+  margin-top: 74px;
   margin-left: 157px;
 }
 
