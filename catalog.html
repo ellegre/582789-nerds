@@ -211,6 +211,25 @@
 				</section>
 			</div>
 		</footer>
+		<section class="modal modal-login">
+		    <h2>Напишите нам</h2>
+		    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="modal-description modal-error">
+				    <label for="user-login">Ваше имя:</label><br>
+				    <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+				</p>
+				<p class="modal-description modal-error">
+				    <label for="user-password">Ваш e-mail:</label><br>
+				    <input class="login-icon-password" id="user-password" type="email" name="password" placeholder="email@example.com">
+				</p>
+				<p class="modal-description letter-text modal-error">
+				    <label for="user-text">Текст письма:</label><br>
+				    <textarea name="text" id="user-text" placeholder="В свободной форме"></textarea>
+				</p>
+				<button class="button" type="submit">Отправить</button>   
+		    </form>
+		    <button class="modal-close" type="button">Закрыть</button>
+		</section>
 		<script src="js/script.min.js"></script>
 	</body>
 </html>
