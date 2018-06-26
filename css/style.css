@@ -1177,6 +1177,7 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   border: 0;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .modal-close::before,
@@ -1358,6 +1359,6 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.error input {
+.modal-error input {
   border: 2px solid red;
 }
