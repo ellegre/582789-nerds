@@ -1,4 +1,4 @@
-  body {
+body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
@@ -1168,10 +1168,11 @@ input[type="radio"].visually-hidden {
           animation-duration: 0.6s;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0) translateX(-50%);
+    -webkit-transform: translateX(0) translateX(-50%);
+            transform: translateX(0) translateX(-50%);
   }
 
   10%,
@@ -1179,14 +1180,41 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-10px) translateX(-50%);
+    -webkit-transform: translateX(-10px) translateX(-50%);
+            transform: translateX(-10px) translateX(-50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px) translateX(-50%);
+    -webkit-transform: translateX(10px) translateX(-50%);
+            transform: translateX(10px) translateX(-50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0) translateX(-50%);
+            transform: translateX(0) translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px) translateX(-50%);
+            transform: translateX(-10px) translateX(-50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px) translateX(-50%);
+            transform: translateX(10px) translateX(-50%);
   }
 }
 
@@ -1287,11 +1315,6 @@ input[type="radio"].visually-hidden {
   border-color: #b4b9bb;
 }
 
-.login-form input:invalid,
-.login-form textarea:invalid {
-  border-color: #e74246;
-}
-
 .login-form label {
   display: block;
   font-size: 16px;
@@ -1382,7 +1405,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-error.modal {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-error input {
